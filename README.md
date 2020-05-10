@@ -4,7 +4,16 @@ Implementation of [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/15
 
 ### Requirements
  - [Tensorflow](http://www.tensorflow.org/)
- - [VGG 19 model](https://drive.google.com/file/d/0B8QJdgMvQDrVU2cyZjFKU1RrLUU/view?usp=sharing)
+ - [VGG 19 model](https://drive.google.com/file/d/0B8QJdgMvQDrVU2cyZjFKU1RrLUU/view?usp=sharing) - download manually
+
+```
+# Requires Python 2.x and older dependencies
+conda create --name tensorflow_old python=2.7
+conda activate tensorflow_old
+conda install tensorflow-gpu==1.9.0 scipy=1.1.0 pillow
+python main.py
+# Creates 'results' folder with intermediate PNG files, and the final 'results.png' image
+```
 
 ### Examples
 
